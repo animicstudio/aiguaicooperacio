@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+
+    <link rel="shortcut icon" sizes="16x16" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>FCCD Aigua i cooperació</title>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,700|Julius+Sans+One|Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+<div class="video">
+    <video preload="auto" loop="loop" id="pretzel-video" class="video-playing" autoplay>
+        <source src="http://www.aiguaesvida.org/aiguaicooperacio/fons.mp4" type="video/mp4">
+    </video>
+</div>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-projectes">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" width="100"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#page-top">Inici</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#mapa">Mapa</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#graphic">Gráfiques</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contacte</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<header>
+    <div class="header-content">
+
+        <div class="container-projectes">
+            <h1>Aigua i sanejament</h1>
+            <p class="concept">
+                A dia d’avui 783 milions de persones encara pateixen les conseqüències de no tenir garantit l’accés a l’aigua, 2.600 milions si parlem de sanejament. Lluny de grans projectes i obres  faraòniques, la cooperació que fan els municipis amb altres pobles del món és una de les vies més eficaces per fer efectiu aquest Dret Humà, una tasca no sempre visible però imprescindible i que ens permet caminar cap a una societat més justa, solidària i cohesionada.
+            </p>
+            <a href="#mapa" class="link-mapa page-scroll">Els projectes <span class="go-to-projects"></span></a>
+        </div>
+    </div>
+</header>
+
+<section id="mapa">
+    <section class="els-projectes">
+
+        <div class="container-projectes">
+
+            <div class="row">
+                <h1 class="map-filter-title">ELS PROJECTES</h1>
+                <button type="button" class="btnInfo btnInfomap" data-toggle="modal"
+                        data-target="#modalInfoProjects">
+                    + info
+                </button>
+
+                <ul id="map-filter" class="map-filter opacity">
+                    <li class="filter active mapFilter" data-map-filter="ALL">
+                        Tots</li>
+                    <li class="filter mapFilter" data-map-filter="ENFORTIMENT_INSTITUCIONAL">
+                        Enfortiment institucional</li>
+                    <li class="filter mapFilter" data-map-filter="EMPODERAMENT">
+                        Empoderament</li>
+                    <li class="filter mapFilter" data-map-filter="INFRAESTRUCTURES">
+                        Infraestructures</li>
+                    <li class="filter mapFilter" data-map-filter="DRET_HUMA">
+                        Dret humà</li>
+                </ul><!--/ #portfolio-filter -->
+
+            </div><!--/ .row-->
+
+        </div><!--/ .container-->
+
+    </section><!--/ .section-->
+
+    <section class="map">
+
+        <div id="map" class="map-container" style="width: 100%; height: 100px"></div>
+
+    </section>
+
+    <section class="input-municipalities">
+
+        <div class="container-projectes">
+            <div class="row">
+
+                <div class="col-xs-9">
+
+                    <p>Saps si el teu municipi participa en algún projecte?</p>
+
+                </div>
+
+                <div class="col-xs-3">
+
+                    <input class="typeahead" placeholder="Busca el teu municipi">
+
+                </div>
+
+            </div><!--/ .row-->
+        </div>
+
+    </section>
+
+</section>
+
+<section  id="graphic">
+    <section class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <hgroup class="section-title align-center opacity">
+                        <h1>La cooperació, una prioritat?</h1>
+                        <h2>Com ha afectat la crisi econòmica en els projectes d'aigua i sanejament</h2>
+                        <p>El següent gràfic mostra el nº de projectes de cooperació en aigua i sanejament que han iniciat els municipis catalans els darrers anys, així com l’import d’aquests projectes. Tal i com es pot observar, les retallades al sector públic no s’han oblidat de la solidaritat internacional, amb una reducció del pressupost que ha arribat al 40%. Tot i així el nº de projectes segueix una tendència alcista, fet que fa pensar en que es fan més projectes més petits. També caldrà comprovar si l’increment de pressupost de 2014 es consolida o és un fet aïllat.</p>
+                    </hgroup>
+                </div>
+
+            </div><!--/ .row-->
+
+            <div class="row">
+
+                <div class="col-xs-12">
+
+                    <div class="graphic-1" style="width: 100%; height: 400px; margin: 0 auto"></div>
+
+                </div>
+
+            </div><!--/ .row-->
+
+        </div><!--/ .container-->
+
+    </section><!--/ .section-->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <hgroup class="section-title align-center opacity">
+                        <h1>Projectes <span>VS</span> Temátiques</h1>
+                        <h2>Cap a on han evolucionat els projectes?</h2>
+                        <p>En aquest gràfic es representen els projectes segons la seva tipologia. Un projecte pot incloure més d’un àmbit.</p>
+                        <p>La dada més preocupant és el reduït nombre de projectes que inclouen la perspectiva de l’aigua com un dret humà, a pesar d’estar reconegut per l’ONU des del 2010. Per altra banda cal reconèixer la importància que tenen els processos d’empoderament a la comunitat en molts dels projectes, una situació coherent amb el fet que els municipis són els organismes administratius més propers a la ciutadania.</p>
+                    </hgroup>
+                </div>
+                <div class="col-xs-12">
+                    <div class="graphic-2" style="width: 100%; height: 400px; margin: 0 auto"></div>
+                </div>
+
+            </div><!--/ .row-->
+
+        </div><!--/ .container-->
+
+    </section><!--/ .section-->
+</section>
+
+<section id="contact" class="contact">
+    <section class="section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <hgroup class="section-title align-center opacity">
+                        <h1>Contacte</h1>
+                        <h2>Per contactar amb nosaltres escriu a:
+                            <br><br><a class="contact-link" href="mailto:somaigua@fonscatala.org">somaigua@fonscatala.org</a>
+                        </h2>
+
+                        <div class="logos-finansadors">
+                            <p>Aquesta pàgina web s’ha desenvolupat amb la col·laboració de:</p>
+                            <div class="col-lg-4 col-md-4 text-center">
+                                <a href="http://www.fonscatala.org/" target="_blank">
+                                    <img src="img/logo-fons.jpg"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-center">
+                                <a href="http://www2.girona.cat/ca" target="_blank">
+                                    <img src="img/logo-ajunt-girona.jpg"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-center">
+                                <a href="http://www.gramenet.cat/inici/?no_cache=1" target="_blank">
+                                    <img src="img/logo-ajunt-santacoloma.jpg"></a>
+                            </div>
+                            <p>Per a més informació:</p>
+                            <div class="col-lg-4 col-md-4 text-center">
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-center">
+                                <a href="http://www.somaigua.cat/" target="_blank">
+                                    <img src="img/somaigua2.jpg"></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-center">
+                            </div>
+
+                        </div>
+
+                    </hgroup>
+                </div>
+
+            </div><!--/ .row-->
+
+        </div><!--/ .container-->
+
+    </section><!--/ .section-->
+
+    <div id="contact-map" class="google_map"></div>
+</section>
+
+<section class="footer bg-dark">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <div class="copyright">
+                    Gràcies per fer difusió dels continguts d’aquesta pàgina.
+                </div><!--/ .cppyright-->
+
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-3">
+
+                <div class="developed">
+                    Desenvolupat per <a href="https://catalunya.isf.es/home/index.php" target="_blank">Enginyeria Sense Fronteres</a> i <a target="_blank" href="http://www.animicstudio.com/">Animic</a>
+                </div><!--/ .developed-->
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade modal-project" id="mapaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tanca</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tanca</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalInfoProjects" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Els projectes</h4>
+            </div>
+            <div class="modal-body">
+                <p>En aquest mapa pots veure els projectes de cooperació internacional que els municipis
+
+                    catalans han iniciat entre el 2010 i el 2014*. Clica sobre qualsevol projecte per veure’n un
+
+                    resum. Pots fer servir el cercador de la part inferior dreta per seleccionar directament un
+
+                    municipi i veure en quins projectes participa, o triar una de les etiquetes de dalt a la dreta
+
+                    per veure la temàtica i enfocament principal que tenen cadascun dels projectes.
+                </p>
+                <p>
+                    Destaca el fet que la majoria de projectes tenen a veure amb el desenvolupament
+
+                    d’infraestructures. Si bé això té cert sentit donada la situació d’emergència mundial en
+
+                    l’accés a l’aigua, es tracta de projectes normalment molt costosos. Tenint en compte la
+
+                    limitada capacitat financera dels municipis, sorprèn que adoptin aquest rol més propi de
+
+                    les grans agències de cooperació internacional que se suposa han d’estar liderant la
+
+                    universalitat de l’accés.
+                </p>
+                <p>
+                    Per contra, la inclusió de la perspectiva de l’aigua i el sanejament com un Dret Humà, en
+
+                    línia amb el que reconegué l’ONU el 2010, és encara ínfima.</p>
+                <span>*Les dades s'han extret del Fons Català de Cooperació per al Desenvolupament</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tanca</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/creative.js"></script>
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript"
+        src='https://www.google.com/jsapi?autoload={
+        "modules":[{
+        "name":"visualization",
+        "version":"1"
+        }]
+      }'></script>
+<script src="js/Fons.js"></script>
+<script src="js/Fons.projectes.js"></script>
+<script src="js/Fons.video.js"></script>
+<script src="js/Fons.municipis.js"></script>
+<script src="js/Fons.map.js"></script>
+<script src="js/Fons.map.events.js"></script>
+<script src="js/Fons.chart.js"></script>
+<script src="js/Fons.utils.js"></script>
+<script src="js/typeahead.jquery.js"></script>
+<script src="js/Fons.autocomplete.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<link rel="stylesheet" href="css/jquery.cookiebar.css" type="text/css">
+<script src="js/jquery.cookiebar.js"></script>
+
+<script>
+    Fons.init();
+</script>
+
+<script src="js/mustache.min.2.1.3.js"></script>
+
+<script id="modalBodyTemplate" type="text/template">
+    <div>
+        <img src="img/projectes/{{id}}.jpg" width="100%" >
+    </div>
+    <div class="modal-project-data">
+        <b>PANS - ZONA</b>
+        <p>{{pais}} - {{zona}}</p>
+        <b>ANY - APORTACIÓ</b>
+        <p>{{anysAportacio}}</p>
+        <b>ENTITAT</b>
+        <p>{{entitat}}</p>
+        <b>CONTRAPART</b>
+        <p>{{contrapart}}</p>
+        <b>PERÍODE D'EXECUCIÓ</b>
+        <p>{{execucio}}</p>
+    </div>
+    <div class="modal-project-sinopsis">
+        <b>NOM</b>
+        <p>{{nom}}</p>
+
+        <b>SINOPSI</b>
+        <p>{{sinopsis}}</p>
+
+        <p>Municipis:</p>
+        <p>{{municipis}}</p>
+
+    </div>
+</script>
+
+<script id="modalError" type="text/template">
+    <b> {{infoMessage}} </b>
+</script>
+
+<script id="modalInfoWindow" type="text/template">
+    <div class='infowindow'>
+        <p><b>PAÍS - ZONA</b>
+            {{pais}} - {{zona}}</p>
+        <p><b>ANY - APORTACIÓ</b>
+            {{anysAportacio}}</p>
+        <p><b>MUNICIPIS</b>
+            {{municipis}}</p>
+        <p><b>ENTITAT</b>
+            {{entitat}}</p>
+        <p><b>CONTRAPART</b>
+            {{contrapart}}</p>
+        <p><b>PERÍODE D'EXECUCIÓ</b>
+            {{execucio}}</p>
+        <button type="button" class="btnInfo" data-toggle="modal"
+                data-target="#mapaModal" data-id="{{id}}">
+            + info
+        </button>
+    </div>
+</script>
+
+
+</body>
+
+</html>
